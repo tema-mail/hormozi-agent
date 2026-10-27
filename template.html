@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Агент Хормози</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--bg:#f7f6f2;--card:#fff;--ink:#1b1b1a;--mut:#5f5e58;--line:#e3e1d8;--acc:#b4441e;--accbg:#fbeee8}
+@media (prefers-color-scheme:dark){:root{--bg:#141413;--card:#1e1e1c;--ink:#ecebe6;--mut:#a4a29a;--line:#33322e;--acc:#f08a5d;--accbg:#2b1d17}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:36px 16px 64px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}
+h2{font-size:23px;margin:46px 0 14px;line-height:1.25}
+h3{font-size:18px;margin:22px 0 8px}
+h4{font-size:16px;margin:18px 0 6px}
+p{margin:0 0 12px}
+a{color:var(--acc)}
+.lead{font-size:18px;color:var(--mut);max-width:760px}
+.tag{display:inline-block;font-size:13px;color:var(--acc);background:var(--accbg);padding:3px 10px;border-radius:99px;margin-bottom:14px}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
+nav.toc a{font-size:14px;text-decoration:none;border:1px solid var(--line);background:var(--card);padding:6px 12px;border-radius:99px;color:var(--ink)}
+.audio{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:22px 0 0;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.audio b{font-size:15px}.audio audio{flex:1;min-width:240px}
+.mode{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin-bottom:14px}
+.mode h3{margin:0 0 4px}
+.mode .say{font-size:14px;color:var(--mut);margin-bottom:10px}
+.mode .say b{color:var(--acc)}
+.mode .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 22px}
+.mode .cols div{font-size:15px}
+.mode .cols h4{margin:0 0 4px;font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.03em}
+.mode ul{margin:0;padding-left:18px}.mode li{margin-bottom:4px}
+.mode .ex{margin-top:12px;border-left:3px solid var(--acc);background:var(--accbg);padding:10px 14px;border-radius:8px;font-size:15px}
+ol.steps{padding-left:22px}ol.steps li{margin-bottom:8px}
+.tw,.md{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);font-size:14.5px;margin:10px 0 16px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;color:var(--mut);font-weight:600;background:var(--bg)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:14px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px}
+summary::-webkit-details-marker{display:none}
+summary h2{margin:0;font-size:20px}
+summary span{font-size:13px;color:var(--acc);white-space:nowrap}
+details[open] summary span{visibility:hidden}
+.md{padding:0 20px 18px}
+.md h2{font-size:19px;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.md h3{font-size:17px}
+.md blockquote{margin:10px 0;padding:8px 14px;border-left:3px solid var(--acc);background:var(--accbg);border-radius:6px}
+.md code,code{background:var(--accbg);padding:1px 5px;border-radius:5px;font-size:13.5px}
+.md pre{background:var(--bg);padding:12px;border-radius:8px;overflow-x:auto}
+.md ul,.md ol{padding-left:22px}
+.note{font-size:14px;color:var(--mut)}
+footer{margin-top:48px;color:var(--mut);font-size:13px}
+</style>
+</head>
+<body>
+<div class="w">
+<span class="tag">Агент hormozi · собран 27.10.2026</span>
+<h1>Хормози: офферы, тексты на сайт, реклама, допродажи</h1>
+<p class="lead">Советник по методу Алекса Хормози, перенесённому на малый бизнес в России. Знания взяты из трёх книг:
+«100M Offers», «100M Leads» и «100M Money Models», это около 28 часов разборов. Порядок работы взят у лучших из 12 Хормози-агентов на GitHub.
+Ниже: что он делает в каждом режиме, как работает, а дальше все его знания от и до.</p>
+{{AUDIO}}
+<nav class="toc">
+<a href="#modes">Режимы</a><a href="#how">Как работает</a><a href="#rules">Правила</a><a href="#offers">Офферы</a><a href="#leads">Лиды и реклама</a><a href="#money">Деньги с клиента</a><a href="#ru">Закон РФ</a><a href="#github">Готовые агенты на GitHub</a>
+</nav>
+
+<h2 id="modes">Режимы: что даёшь – что получаешь</h2>
+
+<div class="mode"><h3>1. Оффер с нуля</h3>
+<div class="say">Скажи: <b>«Хормози, сделай оффер на …»</b>, <b>«крутой оффер»</b>, <b>«усиль оффер»</b></div>
+<div class="cols">
+<div><h4>Что спросит</h4><ul><li>кто клиент конкретно и какая у него боль сейчас</li><li>какой результат он хочет</li><li>цена услуги и сколько она стоит нам</li><li>что есть из доказательств: отзывы, фото, цифры</li></ul></div>
+<div><h4>Что сделает</h4><ul><li>мечта клиента: «результат за срок»</li><li>15–30 проблем по шагам пути клиента: до визита, во время, после</li><li>на каждую проблему – решение и способ доставки</li><li>обрезка по сетке «ценность для клиента × наши затраты»</li><li>стек: ядро, 2–3 бонуса под конкретные возражения</li><li>гарантия с условием и расчётом риска</li><li>настоящий дефицит и срочность, 3–5 названий по формуле MAGIC</li></ul></div>
+</div>
+<div class="ex">Пример с прогона: «Teyes за смену – как с завода» – цена по фото панели до приезда, монтаж через штатные разъёмы, проверка камеры, руля и климата при клиенте, гарантия «Штатное сохраним».</div></div>
+
+<div class="mode"><h3>2. Разбор текущего оффера или страницы</h3>
+<div class="say">Скажи: <b>«разбери оффер»</b>, <b>«почему не покупают»</b> + ссылка на страницу</div>
+<div class="cols">
+<div><h4>Что сделает</h4><ul><li>сам откроет и прочитает страницу</li><li>поставит оценки 1–10 четырём рычагам ценности: результат, вера, что получится, время, усилия клиента</li><li>к каждой оценке – факт со страницы</li><li>назовёт самый слабый рычаг и почему чинить его</li></ul></div>
+<div><h4>Что получишь</h4><ul><li>3–5 правок в виде «было → стало»</li><li>какой рычаг двигает каждая правка</li><li>что нужно снять или узнать (фото, цифры), чтобы правка стала правдой</li></ul></div>
+</div>
+<div class="ex">Пример: «Вера – 3 из 10: цена "по запросу", срок гарантии не указан, на сайте "более 100 установок", а по журналу их около 700».</div></div>
+
+<div class="mode"><h3>3. Тексты на сайт</h3>
+<div class="say">Скажи: <b>«текст на сайт, чтобы продавал»</b>, <b>«первый экран»</b>, <b>«блок гарантии»</b></div>
+<div class="cols">
+<div><h4>Первый экран</h4><ul><li>дескриптор: что, где, почему вам</li><li>H1 с результатом, а не с процессом</li><li>подзаголовок со снятием главного страха</li><li>3 пункта с доказательством</li><li>кнопка с глаголом и подсказка под ней: срок ответа, рассрочка, акция с условиями</li></ul></div>
+<div><h4>Блоки дальше</h4><ul><li>что входит и что не входит</li><li>бонусы: каждый закрывает одно возражение</li><li>гарантия сверх закона</li><li>«почему сейчас», только с настоящей причиной</li><li>возражения и ответы на них</li><li>передаёт маркетологу как вход в план блоков</li></ul></div>
+</div>
+<div class="ex">Пример H1: «Teyes на вашу машину за одну смену – камера, кнопки руля и климат работают как раньше».</div></div>
+
+<div class="mode"><h3>4. Реклама</h3>
+<div class="say">Скажи: <b>«напиши рекламу»</b>, <b>«объявления для Директа»</b>, <b>«креативы для ВК»</b></div>
+<div class="cols">
+<div><h4>Объявления</h4><ul><li>схема Хормози: обращение к своему → ценность (что, кому, когда) → призыв</li><li>группы по запросам, своё объявление на каждую</li><li>лимиты знаков площадки посчитаны</li><li>без «лучший / №1 / самый» – 38-ФЗ</li><li>Директ (поиск и РСЯ), VK Реклама, Авито, Telegram-посевы с маркировкой</li></ul></div>
+<div><h4>Деньги</h4><ul><li>тестовый бюджет: 1–2 прибыли с клиента</li><li>контрольная точка на половине бюджета</li><li>порог «продолжать»: клиент обходится не дороже трети прибыли с него (3:1)</li><li>как понять, что сломано: реклама или продажи</li><li>поправка на сезон</li></ul></div>
+</div>
+<div class="ex">Пример: «Teyes на Prado 150 и LC200 – камера и кнопки руля живы» / «Цена до визита». Тест 20 000 ₽ за 2 недели: от 6 установок – масштабируем, 0–1 – стоп и разбор.</div></div>
+
+<div class="mode"><h3>5. Деньги с клиента (допродажи, абонементы)</h3>
+<div class="say">Скажи: <b>«как заработать больше с клиента»</b>, <b>«допродажи»</b>, <b>«апселл»</b></div>
+<div class="cols">
+<div><h4>Из 15 моделей Money Models</h4><ul><li><b>привлечь:</b> бесплатное с возвратом, розыгрыш, приманка, «купи X – Y в подарок», «плати меньше сейчас»</li><li><b>допродать:</b> классическая, меню, якорь, перенос оплаты в следующую покупку</li><li><b>понизить при отказе:</b> рассрочка, пробный период, урезанная версия</li><li><b>удержать:</b> бонус, скидка, отменённый взнос за абонемент</li></ul></div>
+<div><h4>Что получишь</h4><ul><li>лестницу: что предлагаем первым, что следом, что при отказе</li><li>в какой момент предлагать</li><li>дословные фразы</li><li>математику: окупить привлечение клиента за первые 30 дней</li><li>проверку по закону: автосписания, акции, розыгрыши</li></ul></div>
+</div>
+<div class="ex">Пример: регистратор к магнитоле – предлагать в момент сметы, выбором «только вперёд или вперёд и назад», а не на выдаче машины.</div></div>
+
+<div class="mode"><h3>6. Цена и лид-магнит</h3>
+<div class="say">Скажи: <b>«как поднять цену»</b>, <b>«сделай лид-магнит»</b></div>
+<div class="cols">
+<div><h4>Цена</h4><ul><li>от ценности, а не от конкурентов</li><li>что добавить, чтобы цену можно было назвать спокойно</li><li>почему скидка – «яма», а не решение</li><li>модель «гантели»: дешёвый вход и дорогой премиум</li></ul></div>
+<div><h4>Лид-магнит</h4><ul><li>узкая проблема и полное её решение</li><li>формат: чек-лист, расчёт, мини-аудит, проба</li><li>как доставим</li><li>что предложим следом – основной оффер</li></ul></div>
+</div></div>
+
+<h2 id="how">Как работает</h2>
+<ol class="steps">
+<li><b>Пересказывает задачу:</b> «понял так, не хватает вот этого». Сайт открывает и читает сам, факты берёт из памяти по проекту.</li>
+<li><b>Задаёт вопросы по одному</b> и к каждому сразу даёт свой вариант ответа: тебе остаётся только поправить. Чего не узнать, помечает «неизвестно» и идёт дальше.</li>
+<li><b>Ищет одно главное, что сломано:</b> нет спроса → слабый оффер → о нас не знают → мало денег с клиента. Чинит его, остальное оставляет на следующий шаг.</li>
+<li><b>Открывает нужную шпаргалку</b> из базы, полный конспект поднимает только по теме.</li>
+<li><b>Считает вслух:</b> окупаемость гарантии, тестовый бюджет, LTGP:CAC, маржу допродажи.</li>
+<li><b>Проверяет по закону России</b> и под наши площадки.</li>
+<li><b>Отдаёт результат</b> файлом в проекте, пишет, на чём основан, спрашивает «что зашло, что мимо?».</li>
+<li><b>Записывает твою реакцию</b> в журнал и учитывает её в следующий раз.</li>
+</ol>
+
+<h2 id="rules">Правила</h2>
+<div class="tw"><table>
+<tr><th>Не делает</th><th>Делает вместо</th></tr>
+<tr><td>Выдумывать отзывы, кейсы, цифры, сроки</td><td>«[запросить у владельца: сколько машин за год]»</td></tr>
+<tr><td>Гарантию «вернём деньги» без расчёта</td><td>«Если X не через Y – делаем Z» и посчитанный риск</td></tr>
+<tr><td>Таймер, «осталось 2 места» без причины</td><td>Настоящий предел: запись на неделю, сезон, партия</td></tr>
+<tr><td>«Лучший», «№1», «самые низкие цены»</td><td>Проверяемое: «12 лет», «гарантия 2 года»</td></tr>
+<tr><td>Стек с выдуманной «ценностью 50 000 ₽»</td><td>Ценность бонуса – по цене, за которую его продают отдельно</td></tr>
+<tr><td>Говорить от имени Хормози</td><td>«По Хормози: …» со ссылкой на раздел базы</td></tr>
+<tr><td>Американские площадки и доллары</td><td>Директ, VK Реклама, Авито, 2ГИС, Telegram; рубли</td></tr>
+<tr><td>Все фреймворки разом</td><td>Одно главное ограничение, один режим</td></tr>
+</table></div>
+<p class="note">Не его работа: план блоков и прототип всего сайта (маркетолог берёт у Хормози оффер и тексты), SEO страниц (site-seo), разговор с клиентом после заявки (продавец), настройка кампаний в рекламных кабинетах.</p>
+
+<h2>Знания от и до</h2>
+<p class="note">Рабочие шпаргалки агента по каждой книге: все фреймворки, шаги, шаблоны, цифры и ошибки. Метки: [Х] – Хормози, [Р] – пример автора разбора, [С] – вывод сборщика базы; «(?)» – место, неразборчивое в записи.
+Полные конспекты (460 тыс. знаков) лежат только в приватной базе: это пересказ платных книг.</p>
+{{BOOKS}}
+
+<h2 id="github">Готовые Хормози-агенты на GitHub</h2>
+<p>Есть, разведка 27.10.2026 нашла 12. Наш агент взял у них порядок работы, а знания у него свои, из 28 часов разборов. На русском нашёлся один, и это конспект без порядка работы.</p>
+<details open><summary><h2>Лучшие находки</h2><span>развернуть</span></summary><div class="md">{{AGENTS}}</div></details>
+<details><summary><h2>Чего у них нет – и что поэтому добавили мы</h2><span>развернуть</span></summary><div class="md">{{AGENTS_WEAK}}</div></details>
+
+<h2>Источники</h2>
+<div class="tw"><table>
+<tr><th>Ролик</th><th>Длина</th></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=4qJOJYvnohE">Полный разбор «100 млн Офферы»</a>, канал «Hormozi по-русски» (Денис Селиван)</td><td>5:45</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=PyX9ukuWP-w">Полный разбор «100 млн Лиды», ч.1</a></td><td>9:05</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=hUyMUpBQ0_A">Полный разбор «100 млн Лиды», ч.2</a></td><td>8:58</td></tr>
+<tr><td><a href="https://www.youtube.com/watch?v=a5Bcl_C-Rs4">100M Money Models, аудиокнига</a> (англ.)</td><td>4:17</td></tr>
+</table></div>
+<p class="note">Плейлист «Лиды» по главам (21 ролик) – тот же материал, не расшифровывался.</p>
+
+<footer>Агент <code>hormozi</code> · база <code>~/.claude/znaniya/hormozi</code> (приватный репозиторий) · страница собирается из базы скриптом build.py</footer>
+</div>
+</body>
+</html>
